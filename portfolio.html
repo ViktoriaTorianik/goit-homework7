@@ -15,35 +15,59 @@
   </head>
   <body>
   <!-- {Хедер} -->
-  <header class="border-header">
+  <header class="border-header" >
     <div class="container top-line ">
-      
-    <nav>
+  
       <div class="main-nav">
       <a class="logo" href="./index.html"> <span class="logoaccent">Web</span><span class="header-logo">Studio</span></a>
-      <ul class="list header-nav">
-        <li class="header-link" >
-          <a href="./index.html" class="top-line-nav">Studio</a>
-        </li>
-        <li class="header-link">
-          <a href="./portfolio.html"class="top-line-nav trait-portfolio">Portfolio</a>
-        </li>
-        <li class="header-link">
-          <a href=""class="top-line-nav">Contacts</a>
-        </li>
-      </ul>
+      <button class="burger-menu js-open-menu" type="button">
+          <svg class="burger-icon" 
+          width=32px 
+          height=22px
+          aria-label="мобильное меню">
+            <use class="menu-open" href="./images/icons (1).svg#icon-menu-hamburger"></use>
+          </svg>
+      </button>
+        <div class="mobile-menu js-menu-container is-open" aria-expanded="false">
+          <button type="button" class=" close-mobile js-close-menu" >
+            <svg class="modal-icon"><use href="./images/icons (1).svg#icon-close-modal"></use></svg>
+          </button>
+          <div class="mobile-nav"><nav>
+            <div class="nav-list">
+            <ul class="list header-nav">
+              <li class="header-link" >
+               <a href="" class="top-line-nav trait-studio">Studio</a>
+              </li>
+              <li class="header-link">
+               <a href="./portfolio.html" class="top-line-nav">Portfolio</a>
+              </li>
+              <li class="header-link">
+               <a href="" class="top-line-nav trait-contacts">Contacts</a>
+              </li>
+            </ul>
+            </div>
+      </nav>
+      <address class="contact">
+        <ul class="list adress">
+          <li class="item"><a href="mailto:info@devstudio.com" class="font-adress">info@devstudio.com</a></li>
+          <li class="item"><a href="tel:+110001111111" class="font-adress tell">+11 (000) 111-11-11</a></li>
+        </ul>
+      </address></div>
+          
+      <div class="social-mobile">
+        <ul class="social-list menu-social list">
+          <li class="social-item"><a href="" class="social-link"><svg class="social-icon"><use href="./images/icons (1).svg#icon-instagram"></use></svg></a></li>
+          <li class="social-item"><a href="" class="social-link"><svg class="social-icon"><use href="./images/icons (1).svg#icon-twitter"></use></svg></a></li>
+          <li class="social-item"><a href="" class="social-link"><svg class="social-icon"><use href="./images/icons (1).svg#icon-facebook"></use></svg></a></li>
+          <li class="social-item"><a href="" class="social-link"><svg class="social-icon"><use href="./images/icons (1).svg#icon-linkedin"></use></svg></a></li>
+        </ul>
+      </div>
+        
     </div>
-    </nav>
-  
-    <address class="cotact">
-      
-      <ul class="list adress">
-        <li class="item"><a href="mailto:info@devstudio.com" class="font-adress">info@devstudio.com</a></li>
-        <li class="item"><a href="tel:+110001111111" class="font-adress">+11 (000) 111-11-11</a></li>
-      </ul>
     
-    </address>
   
+   
+  </div>
   </div>
   </header>
     <main>
@@ -228,7 +252,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-bloc">
-        <div>
+        <div class="footer-bloc-logo">
       <a class="logo line-logo" href="./index.html"> <span class="logoaccent">Web</span><span class="footer-logo">Studio</span></a>
       <p class="footer-text">
         Increase the flow of customers and sales for your business with digital
@@ -247,13 +271,17 @@
       <div class="form">
         <p class="footer-list">Subscribe</p>
         <form class="footer-form" name="mail" novalidate>
+                 
             <input class="entry-field" type="email" name="E-mail" placeholder="E-mail" aria-label="enter your email">
+          
+        
 <button type="submit" class="footer-button">
   Subscribe 
   <svg class="icon-send" width="24" height="24">
     <use  href="./images/icons (1).svg#icon-icon-send"></use>
   </svg>
 </button>
+
         </form>
       </div>
     </div>
